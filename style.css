@@ -162,13 +162,13 @@ body {
 .intro-text {
     font-size: 16px;
     margin-bottom: 30px;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
 .inspiration-text {
     font-size: 16px;
     margin-bottom: 40px;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
 .contact-section {
@@ -186,7 +186,7 @@ body {
 
 .contact-text {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .email-link {
@@ -197,23 +197,34 @@ body {
 /* Footer */
 .footer {
     display: flex;
-    justify-content: left;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
+    gap: 12px;
     padding-top: 40px;
-    border-top: 1px solid #ddd;
+    padding-bottom: 40px;
 }
 
 .footer-logo {
-    font-family: 'gambetta-bold', serif;
     font-size: 24px;
-    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
+.footer-name {
+    font-family: 'gambetta-bold', serif;
+    font-weight: bold;
+}
+
+.footer-design {
+    font-family: 'pixelify', sans-serif;
+    font-weight: normal;
+    font-size: 27px;
+}
+
 .footer-contact {
     font-family: 'pixelify', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 8px;
 }
 
 .footer-social {
