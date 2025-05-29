@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'gambetta-regular';
+    src: url('fonts/Gambetta-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gambetta-bold';
+    src: url('fonts/Gambetta-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'pixelify';
+    src: url('fonts/PixelifySans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +28,6 @@
 
 body {
     font-family: 'gambetta-regular', serif;
-    src: url('fonts/Gambetta-Regular.otf');
     background-color: #f8f8f8;
     color: #000000;
     line-height: 1.6;
@@ -34,9 +55,22 @@ body {
 
 .logo {
     font-size: 60px;
-    font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.logo-name {
+    font-family: 'gambetta-bold', serif;
+    font-weight: bold;
+}
+
+.logo-design {
+    font-family: 'pixelify', sans-serif;
+    font-weight: normal;
+    font-size: 67px;
 }
 
 .social-icons {
@@ -109,10 +143,8 @@ body {
 
 .greeting {
     font-family: 'pixelify', sans-serif;
-    src: url('fonts/PixelifySans.ttf');
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 30px;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
@@ -129,13 +161,13 @@ body {
 }
 
 .contact-section {
-    padding: 30px;
+    /*padding: 30px;*/
     margin-top: 40px;
 }
 
 .contact-title {
     font-size: 24px;
-    font-weight: bold;
+    font-family: 'pixelify', sans-serif;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -168,6 +200,7 @@ body {
 }
 
 .footer-contact {
+    font-family: 'pixelify', sans-serif;
     font-size: 14px;
 }
 
