@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: 'gambetta-semibold';
+    src: url('fonts/Gambetta-Semibold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'gambetta-bold';
     src: url('fonts/Gambetta-Bold.otf') format('opentype');
     font-weight: bold;
@@ -81,8 +88,46 @@ body {
     cursor: pointer;
 }
 
-/* Main Content */
+/* Home */
 .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.main-name {
+    font-family: 'gambetta-bold', serif;
+    font-size: clamp(3rem, 8vw, 6rem);
+    margin-bottom: 20px;
+}
+
+.main-design {
+    font-family: 'pixelify', monospace;
+    font-size: clamp(3.5rem, 8vw, 6.5rem);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.tagline {
+    font-family: 'pixelify';
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-family: 'gambetta-semibold', serif;
+    font-size: clamp(1rem, 2.5vw, 1.8rem);
+    max-width: 1000px;
+    line-height: 1.4;
+    margin-bottom: 40vh;
+}
+
+/* About */
+.main-content-about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
